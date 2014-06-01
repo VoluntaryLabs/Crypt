@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C77F9AA-5E39-424A-837E-CCB9CCC27C8E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Crypt3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3015D750-252D-46F7-AAD4-76107E2FA8BF</key>
+		<string>https://github.com/stevedekorte/Crypt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Crypt3.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3015D750-252D-46F7-AAD4-76107E2FA8BF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stevedekorte/Crypt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3015D750-252D-46F7-AAD4-76107E2FA8BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3015D750-252D-46F7-AAD4-76107E2FA8BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Crypt</string>
+		</dict>
+	</array>
+</dict>
+</plist>
