@@ -1,0 +1,74 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fswiss\fcharset77 Helvetica;\f1\fswiss\fcharset77 Helvetica-Bold;\f2\fmodern\fcharset77 Courier;
+\f3\fswiss\fcharset77 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\fs26 \cf0 \
+This application can be used to encrypt and decrypt files and folders with a password of your choice. \
+\
+
+\f1\b Encrypting\
+
+\f0\b0 Drag the file or folder you want to encrypt into the icon well.  After entering a password, it will be encrypted and saved as the same file name but with a new suffix ending in ".crypt3" extension in the same path. It's important that you do not change the suffixes of the encrypted file.\
+\
+
+\f1\b Shredding
+\f0\b0 \
+If the "shred original file" option is selected, the input file/folder will be securely shredded after the encrypted archive is made. \
+\
+
+\f1\b Decrypting
+\f0\b0 \
+Drag in the encrypted .crypt3 file. Enter the password you entered when you encrypted the file. The file will be decrypted and saved without the .crypt3 extension. The encrypted file will be shredded if the option to do so is selected.\
+\
+
+\f1\b Open Encryption Format\
+
+\f0\b0 The encryption format is a tar.gz archive of the input file or folder which is then encrypted with openssl using the algorithm shown in the file suffix - the current default is 
+\f2\fs24 \cf2 \CocoaLigature0 aes-256-cbc
+\f0\fs26 \cf0 \CocoaLigature1  (Advanced Encryption Algorithm Standard cipher using a 256bit key in cipher-block chaining mode). \
+\
+The resulting file can be decrypted on unix or on windows/cygwin with the command:\
+\
+\pard\tx700\tx1400\tx2100\tx2800\tx3500\tx4200\tx4900\tx5600\tx6300\tx7000\tx7700\tx8400\tx9100\tx9800\tx10500\tx11200\tx11900\tx12600\tx13300\tx14000\tx14700\tx15400\tx16100\tx16800\tx17500\tx18200\tx18900\tx19600\tx20300\tx21000\tx21700\tx22400\tx23100\tx23800\tx24500\tx25200\tx25900\tx26600\tx27300\tx28000\tx28700\tx29400\tx30100\tx30800\tx31500\tx32200\tx32900\tx33600\tx34300\tx35000\tx35700\tx36400\tx37100\tx37800\tx38500\tx39200\tx39900\tx40600\tx41300\tx42000\tx42700\tx43400\tx44100\tx44800\tx45500\tx46200\tx46900\tx47600\tx48300\tx49000\tx49700\tx50400\tx51100\tx51800\tx52500\tx53200\tx53900\tx54600\tx55300\tx56000\tx56700\tx57400\tx58100\tx58800\tx59500\tx60200\tx60900\tx61600\tx62300\tx63000\tx63700\tx64400\tx65100\tx65800\tx66500\tx67200\tx67900\tx68600\tx69300\tx70000\ql\qnatural
+
+\f2\fs24 \cf0 \CocoaLigature0 	openssl enc -d -(cipher) -salt -k \cf2 "(key)"\cf0  -in \cf2 "(filePath)"\cf0  | gunzip | tar -x -C \cf2 "(folder)"\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\fs26 \cf0 \CocoaLigature1 \
+where 
+\f2\fs24 \CocoaLigature0 cipher is the cipher alogithm used, 
+\f0\fs26 \CocoaLigature1 key is replaced with the key used to encrypt the file, filePath should be the path to the encrypted file, and folder should be the path to the output folder.\
+\
+
+\f1\b Passwords\
+
+\f0\b0 The longer your password is, the more secure your data will be. Remember that good encryption only increases the 
+\f3\i cost per guess 
+\f0\i0 of cracking a file. The maximum 
+\f3\i number
+\f0\i0  of guesses required is determined by the length of your password. I suggest using a pass phrase that includes a few words (words unlikely to appear in dictionaries are the best) peppered with some special characters and numbers. \
+\
+
+\f1\b The Password Hash\
+
+\f0\b0 A hash of the password is stored in the name of the encrypted file. This allows the application to check if your password is valid before using it to decrypt the file (which is useful since decrypting a file with the wrong password results in garbage). The app could put a key at the end of the file that could be checked after decryption, but this solution isn't practical for large files and could be just as (or more) vunerable for small ones. \
+\
+The hash currently used is the first 4 characters of the SHA1 digest of the password. This provides enough information to make the chance of the app decrypting the file with the wrong password to be very small (1 in 65536) for a random password while only slightly reducing the difficulty of cracking the file.\
+\
+
+\f1\b Further Reading\
+
+\f0\b0 \
+Ciphers: \
+\
+	http://en.wikipedia.org/wiki/Cipher\
+\
+The AES cipher: \
+\
+	http://en.wikipedia.org/wiki/Advanced_Encryption_Standard\
+\
+Cipher modes:\
+\
+	http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation}
