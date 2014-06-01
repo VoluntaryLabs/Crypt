@@ -1,8 +1,5 @@
 
+- panel to warn not to rename encrypted file
 
-panel to warn not to rename encrypted file
-
-panel to warn that resource forks
-
-tar files too
+- panel to warn that resource forks are not preserved
 
