@@ -18,6 +18,7 @@
 		AA82A533193BCFEE005EFE75 /* crypt.png in Resources */ = {isa = PBXBuildFile; fileRef = AA82A52F193BCFEE005EFE75 /* crypt.png */; };
 		AA82A534193BCFEE005EFE75 /* New icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA82A531193BCFEE005EFE75 /* New icon.icns */; };
 		AA82A536193BD022005EFE75 /* crypt.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA82A535193BD022005EFE75 /* crypt.icns */; };
+		AA9C72D119874FE00036E3FF /* NSString+CharacterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9C72D019874FE00036E3FF /* NSString+CharacterTests.m */; };
 		AAA4042A193BC8EA006415CF /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA4041F193BC8EA006415CF /* Controller.m */; };
 		AAA4042B193BC8EA006415CF /* Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA40421193BC8EA006415CF /* Cryptor.m */; };
 		AAA4042C193BC8EA006415CF /* DecryptScriptCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA40423193BC8EA006415CF /* DecryptScriptCommand.m */; };
@@ -47,6 +48,8 @@
 		AA82A52F193BCFEE005EFE75 /* crypt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crypt.png; sourceTree = "<group>"; };
 		AA82A531193BCFEE005EFE75 /* New icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "New icon.icns"; sourceTree = "<group>"; };
 		AA82A535193BD022005EFE75 /* crypt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = crypt.icns; sourceTree = "<group>"; };
+		AA9C72CF19874FE00036E3FF /* NSString+CharacterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CharacterTests.h"; sourceTree = "<group>"; };
+		AA9C72D019874FE00036E3FF /* NSString+CharacterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CharacterTests.m"; sourceTree = "<group>"; };
 		AAA4041E193BC8EA006415CF /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		AAA4041F193BC8EA006415CF /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		AAA40420193BC8EA006415CF /* Cryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cryptor.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				AAA40425193BC8EA006415CF /* DragFileWell.m */,
 				AAA40426193BC8EA006415CF /* EncryptScriptCommand.h */,
 				AAA40427193BC8EA006415CF /* EncryptScriptCommand.m */,
+				AA9C72CF19874FE00036E3FF /* NSString+CharacterTests.h */,
+				AA9C72D019874FE00036E3FF /* NSString+CharacterTests.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				AAA4042A193BC8EA006415CF /* Controller.m in Sources */,
 				AAA4042B193BC8EA006415CF /* Cryptor.m in Sources */,
+				AA9C72D119874FE00036E3FF /* NSString+CharacterTests.m in Sources */,
 				AAA40432193BC9F1006415CF /* wordset_4k.c in Sources */,
 				AAA4042E193BC8EA006415CF /* EncryptScriptCommand.m in Sources */,
 				AAA4042C193BC8EA006415CF /* DecryptScriptCommand.m in Sources */,
