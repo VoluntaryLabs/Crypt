@@ -15,12 +15,17 @@ A short suffix that is a hash of the encrypting password is included in the encr
 Dependencies
 -----------------
 
-The openssl folder contains a precompiled version of openssl, libssl and libcrypto. If your goal is to verify the build (a good idea) you'll want to compile those yourself.
+The openssl folder contains a precompiled version of:
+
+* openssl
+* libssl 
+* libcrypto
+
+If your goal is to verify the build (a good idea) you'll want to compile those yourself.
 
 
-History
+Credits
 ---------
 
-I sold this app for a number of years but after reading about the unethical and criminal blanket civilian surveillance activities of various malicious government sponsored agencies, I've decided to make the it free and open source. I hope you find it useful.
-
-- Steve
+Steve Dekorte - developer
+Wesley S. Roche - app icon
