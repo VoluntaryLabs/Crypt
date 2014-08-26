@@ -13,7 +13,7 @@ All encryption and folder archiving are done by running a task which calls a com
 
 A short suffix that is a hash of the encrypting password is included in the encrypted file suffix. This is long enough to use to effectively verify the password (so you don't decrypt to random data by entering the wrong password) but short enough not to greatly reduce the encryption strength. 
 
-A less naive and more reliable approach would be to decrypt a few blocks and look for the zip header though that may make the implementation more complicated.
+A less naive (and more complicated approach) would be to decrypt a few blocks and look for the zip header.
 
 
 Dependencies
