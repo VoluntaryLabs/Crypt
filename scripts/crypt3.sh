@@ -10,16 +10,16 @@ usage () {
     exit 1
 }
 
-if [[ $# != 4 ]]; then
+if [[ $# != 5 && $# != 6 ]]; then
     usage
 fi
 
-opensslexe=`which openssl`
-command=${1}
-shred=${2}
-key=${3}
-filePath=${4}
-skipChecks=${5}
+opensslexe=${1}
+command=${2}
+shred=${3}
+key=${4}
+filePath=${5}
+skipChecks=${6}
 cipher="aes-256-cbc"
 
 keyHash=`echo "${key}" | $opensslexe dgst -sha1 | awk '{ print substr($1, 0, 4) }'`
